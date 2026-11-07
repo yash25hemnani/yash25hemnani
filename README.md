@@ -12,7 +12,6 @@
 ### About me
 
 - I work mainly in **TypeScript** (React, Next.js, Node/Express) and **Flutter** (Riverpod, Firebase)
-- I like shipping apps end to end — a Flutter front end, Firebase, and small TypeScript services behind it
 - I also enjoy going low-level: **systems programming in C** and **ESP32 firmware**
 - Avid reader — which is why I built an app that scans my bookshelves and catalogues them for me
 
