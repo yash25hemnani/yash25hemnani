@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 145" width="220" height="145" role="img" aria-label="Button, WiFi and BLE inputs feed one event bus, which drives the LED">
+  <style>
+    .l{font:500 11px system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#8B949E}
+    .e{stroke:#8B949E;stroke-width:1.5;fill:none}
+  </style>
+  <text class="l" x="8" y="34">button</text>
+  <text class="l" x="8" y="74">WiFi</text>
+  <text class="l" x="8" y="114">BLE</text>
+  <path class="e" d="M52,30 L106,30 M52,70 L106,70 M52,110 L106,110"/>
+  <line x1="110" y1="22" x2="110" y2="118" stroke="#E0577A" stroke-width="4" stroke-linecap="round"/>
+  <text class="l" x="110" y="138" text-anchor="middle">event bus</text>
+  <line class="e" x1="114" y1="70" x2="162" y2="70"/>
+  <circle cx="178" cy="70" r="16" fill="#E0577A" fill-opacity=".18"/>
+  <circle cx="178" cy="70" r="9" fill="#E0577A"/>
+  <text class="l" x="178" y="104" text-anchor="middle">LED</text>
+</svg>

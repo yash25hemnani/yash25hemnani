@@ -1,56 +1,61 @@
-<h1 align="center">Hey, I'm Yash 👋</h1>
-<p align="center">
-  TypeScript & Flutter developer building full-stack web and mobile apps — currently at <b>Gxpress Solutions</b>, Jaipur 🇮🇳
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <img src="assets/header-light.svg" width="100%" alt="Yash Hemnani — TypeScript & Flutter developer at Gxpress Solutions, Jaipur">
+</picture>
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/yash-hemnani-yh25"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a> <a href="https://github.com/yash25hemnani?tab=repositories"><img src="https://img.shields.io/badge/Projects-181717?style=for-the-badge&logo=github&logoColor=white" alt="Repositories"/></a>
-</p>
+At work I build full-stack web and mobile apps in **TypeScript** (React, Next.js, Node, Express) and **Flutter** (Riverpod, Firebase). On my own time I go lower down the stack: a database server in C and firmware for an ESP32. I also read a lot, which is why one of the apps below catalogues my bookshelves for me.
 
----
+[LinkedIn](https://www.linkedin.com/in/yash-hemnani-yh25) · [All repositories](https://github.com/yash25hemnani?tab=repositories)
 
-### About me
+<br>
 
-- I work mainly in **TypeScript** (React, Next.js, Node/Express) and **Flutter** (Riverpod, Firebase)
-- I also enjoy going low-level: **systems programming in C** and **ESP32 firmware**
-- Avid reader — which is why I built an app that scans my bookshelves and catalogues them for me
+## What I've been building
 
----
+<img align="right" width="220" src="assets/tap.svg" alt="Two vibration patterns: Miss you is two heartbeats, Here for you is a slow swell">
 
-### What I've been building
+### [A Little Tap](https://github.com/yash25hemnani/a_little_tap)
 
-#### [A Little Tap](https://github.com/yash25hemnani/a_little_tap)
-A couples app: tap the heart and your partner's phone buzzes with a pattern that means something — two heartbeats for *Miss you*, a warm swell for *Here for you*. Create your own feelings and draw their vibration in a waveform editor, see when your partner is around, and look back on every tap you've shared. Push notifications are delivered by a [Cloudflare Worker](https://github.com/yash25hemnani/little-tap-cloudflare-worker) written in TypeScript.
+A couples app. Tap the heart and your partner's phone buzzes with a pattern that means something: two heartbeats for *Miss you*, a warm swell for *Here for you*. You can draw your own patterns in a waveform editor, see when your partner is around, and look back on every tap you've shared. Push notifications go out through a [Cloudflare Worker](https://github.com/yash25hemnani/little-tap-cloudflare-worker).
 
-<img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white"/> <img src="https://img.shields.io/badge/Riverpod-0553B1?style=flat-square"/> <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black"/> <img src="https://img.shields.io/badge/Cloudflare_Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+<sub>Flutter, Riverpod, Firebase, Cloudflare Workers, TypeScript</sub>
 
-#### [Shelf Snap](https://github.com/yash25hemnani/shelf-snap)
-Point your camera at a bookshelf and get a searchable library. On-device OCR reads the spines, an LLM pieces the fragments back into real titles and authors, and Google Books confirms the matches. Also scans barcodes live, and lets you share libraries with friends through username invites. The AI step runs through a small [Express + TypeScript API](https://github.com/yash25hemnani/shelf-snap-wrapper) around Groq.
+<br clear="right">
 
-<img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white"/> <img src="https://img.shields.io/badge/Riverpod-0553B1?style=flat-square"/> <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black"/> <img src="https://img.shields.io/badge/ML_Kit-4285F4?style=flat-square&logo=google&logoColor=white"/> <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white"/> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+<img align="right" width="220" src="assets/shelf.svg" alt="Book spines on a shelf, two of them boxed where OCR found a title">
 
-#### [Y-Bot](https://github.com/yash25hemnani/y-bot-esp32)
-ESP32 firmware that reacts to a physical button press and to remote commands sent over WiFi or BLE. Inputs go onto an event bus (button presses straight from an interrupt handler) and are routed to modules like the onboard LED. Comes with a [Flutter app](https://github.com/yash25hemnani/y-bot-app) and an [admin panel](https://github.com/yash25hemnani/y-bot-admin-panel).
+### [Shelf Snap](https://github.com/yash25hemnani/shelf-snap)
 
-<img src="https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white"/> <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white"/> <img src="https://img.shields.io/badge/PlatformIO-F5822A?style=flat-square&logo=platformio&logoColor=white"/> <img src="https://img.shields.io/badge/BLE-0082FC?style=flat-square&logo=bluetooth&logoColor=white"/>
+Point your camera at a bookshelf and get a searchable library. On-device OCR reads the spines, an LLM turns the fragments back into real titles and authors, and Google Books confirms the matches. It also scans barcodes live, and you can share a library with friends by inviting their username. The AI step runs through a small [Express API](https://github.com/yash25hemnani/shelf-snap-wrapper) in front of Groq.
 
-#### [Memora DB](https://github.com/yash25hemnani/memora-db)
-A TCP database server written from scratch in C. Each client gets its own forked process, data lives in a left-child/right-sibling path tree, a hand-rolled hash table makes lookups fast, and every database persists to a flat file.
+<sub>Flutter, Riverpod, Firebase, ML Kit, Express, TypeScript</sub>
 
-<img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white"/> <img src="https://img.shields.io/badge/Make-427819?style=flat-square&logo=gnu&logoColor=white"/>
+<br clear="right">
 
----
+<img align="right" width="220" src="assets/ybot.svg" alt="Button, WiFi and BLE inputs feed one event bus, which drives the LED">
 
-### Tech stack
+### [Y-Bot](https://github.com/yash25hemnani/y-bot-esp32)
 
-**Languages**<br/>
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/> <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white"/> <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/> <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white"/> <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white"/>
+ESP32 firmware that responds to a physical button and to remote commands over WiFi or BLE. Every input goes onto one event bus (button presses straight from the interrupt handler), which routes it to modules like the onboard LED. It has a [Flutter app](https://github.com/yash25hemnani/y-bot-app) and an [admin panel](https://github.com/yash25hemnani/y-bot-admin-panel).
 
-**Web & Backend**<br/>
-<img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB"/> <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/> <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white"/> <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white"/> <img src="https://img.shields.io/badge/TanStack_Query-FF4154?style=flat-square&logo=reactquery&logoColor=white"/> <img src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white"/> <img src="https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white"/> <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
+<sub>ESP32, C++, PlatformIO, BLE</sub>
 
-**Mobile**<br/>
-<img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white"/> <img src="https://img.shields.io/badge/Riverpod-0553B1?style=flat-square"/> <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black"/>
+<br clear="right">
 
-**Embedded & Systems**<br/>
-<img src="https://img.shields.io/badge/ESP32-E7352C?style=flat-square&logo=espressif&logoColor=white"/> <img src="https://img.shields.io/badge/PlatformIO-F5822A?style=flat-square&logo=platformio&logoColor=white"/>
+<img align="right" width="220" src="assets/memora.svg" alt="A left-child right-sibling tree: each node points down to its first child and right to its next sibling">
+
+### [Memora DB](https://github.com/yash25hemnani/memora-db)
+
+A TCP database server written from scratch in C. Each client gets its own forked process. Data lives in a left-child/right-sibling tree of paths, a hand-rolled hash table keeps lookups fast, and every database is saved to a flat file.
+
+<sub>C, Make</sub>
+
+<br clear="right">
+
+## What I work with
+
+| | |
+|---|---|
+| **Languages** | TypeScript, JavaScript, Dart, Python, C++, C |
+| **Web & backend** | React, Next.js, Node.js, Express, TanStack Query, Zod, Django, FastAPI |
+| **Mobile** | Flutter, Riverpod, Firebase |
+| **Embedded** | ESP32, PlatformIO |

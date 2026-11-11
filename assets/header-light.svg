@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 230" width="880" height="230" role="img" aria-label="Yash Hemnani — a signal trace running from web to mobile to firmware to systems">
+  <style>
+    .name{font:700 46px system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#1F2328;letter-spacing:-1px}
+    .sub{font:400 17px system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#59636E}
+    .lbl{font:500 13px system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#59636E}
+    .trace{fill:none;stroke:#D63B5E;stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round;stroke-dasharray:1;stroke-dashoffset:1;animation:draw 2.6s cubic-bezier(.6,0,.3,1) .2s forwards}
+    .pin{fill:#D63B5E;opacity:0;animation:on .3s ease-out 2.7s forwards}
+    .tick{stroke:#D1D9E0;stroke-width:1}
+    @keyframes draw{to{stroke-dashoffset:0}}
+    @keyframes on{to{opacity:1}}
+    @media (prefers-reduced-motion:reduce){.trace{animation:none;stroke-dashoffset:0}.pin{animation:none;opacity:1}}
+  </style>
+  <text class="name" x="40" y="76">Yash Hemnani</text>
+  <text class="sub" x="42" y="110">TypeScript &amp; Flutter developer at Gxpress Solutions, Jaipur</text>
+  <line class="tick" x1="240" y1="140" x2="240" y2="205"/>
+  <line class="tick" x1="460" y1="140" x2="460" y2="205"/>
+  <line class="tick" x1="680" y1="140" x2="680" y2="205"/>
+  <path class="trace" pathLength="1" d="M40,172 C80,142 120,142 140,172 S200,202 240,172 L262,172 L270,148 L278,196 L286,172 L294,172 L299,158 L304,186 L309,172 L326,172 L334,148 L342,196 L350,172 L358,172 L363,158 L368,186 L373,172 L390,172 Q425,132 460,172 L480,172 L480,148 L520,148 L520,172 L540,172 L540,148 L560,148 L560,172 L600,172 L600,148 L640,148 L640,172 L680,172 L836,172"/>
+  <circle class="pin" cx="842" cy="172" r="6"/>
+  <text class="lbl" x="140" y="222" text-anchor="middle">web</text>
+  <text class="lbl" x="350" y="222" text-anchor="middle">mobile</text>
+  <text class="lbl" x="570" y="222" text-anchor="middle">firmware</text>
+  <text class="lbl" x="760" y="222" text-anchor="middle">systems</text>
+</svg>
